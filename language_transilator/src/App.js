@@ -3,8 +3,8 @@ import Transilator from './components/Transilator'
 export default class App extends Component {
     render() {
         return (
-            <div>
-                App
+            <div className="container">
+                <Transilator />
             </div>
         )
     }
