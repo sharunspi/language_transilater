@@ -4,10 +4,16 @@ export default function InputField() {
     const [value,ChangeValue] = useState('')
 
     return (
-        <div>
+        <div className="row">
+            <div>
+                Searchbar
+            </div>
+            <div>
             <form >
-            <input type="text" value={value} onChange={e=>{ChangeValue(e.target.value)}}/>  
-            </form>          
+                <label> Seach field  </label>
+            <input type="text" value={value} onChange={e=>{ChangeValue(e.target.value)}} />  
+            </form>  
+            </div>
         </div>
     )
 }
